@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-app.user(cors());
+app.use(cors());
 
 //config requisocões WS
 const server = require('http').Server(app);
